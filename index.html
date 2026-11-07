@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilos.css" rel="stylesheet"><!--link es para enlazar el archivo css con el html, href es la ruta del archivo css, rel es la relación entre los archivos-->
+</head>
+<body class="login-fondo">
+
+    <main class="login-card"><!-- contenido principal de la página-->
+        <header class="login-encabezado"><!--encabezado de la login-->
+            <!--icono de la tienda-->
+            <i class="bi bi-shop display-4 text-sena"></i>
+            <h1 class="h3 fw-bold">Inventario SENA</h1>
+            <p class="text-secondary mb-0">Ingresa credenciales para continuar</p>
+        </header>
+
+        <form action="dashboard.html" method="get"><!--form permite crear el contenido de un formulario cuando se envia nos lleva a la ruta, el method nos envia la información con get-->
+            
+            <div class="form-floating mb-3"><!--permite agrupar un contenido en un contenedor-->
+                
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="sena@correo.com"required><!--type obliga que tenga el @, placeholder el texto de ejemplo required es que es un campo obligatorio-->
+                <label for="correo"><i class="bi-bi-envelope me-1"></i>Correo Electronico</label><!--es una etiqueta de texto que con el for conecta con el input-->
+            </div>
+            <div class="form_floating mb-3">
+                <input type="password" class="form-control"
+                <label for="clave">Contraseña</label><i class="bi bi-lock me-1"></i>
+                <input type="password" id="clave" name="clave" placeholder="Minimo 6 caracteres" minlength="6" required><!--type es para que no se vea la contraseña, placeholder el texto de ejemplo required es que es un campo obligatorio-->
+            
+            </div>
+            <div  class="d-flex justify-content-betwen aling-item-center mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Recordarme"><!--type checkbox es casilla de verificación-->
+                <label for="Recordarme"> Recordarme</label>
+            </div>
+             <a href="#" class="small text-decoration-none">olvidaste tu contraseña</a>
+             </div>
+    
+            <button type="submit" class="btn-btn-sena w-100 py-2 fw-semibold">
+                <i class="bi bi-box-arrow-in-ringht me-1"></i>Ingresar</button><!--envia el formulario antes revisa los campos required email y minleght-->
+        </form><!--Cierra el formulario-->
+        <p class="login-pie"> tienes cuenta? <a href="registro.html"> class="text-decoration-none"> Regístrate aquí</a></p>
+        <footer class="login-pie"> 2026 SENA - ADSO Mixto</footer><!--pie de pagina-->
+
+    </main>
+
+</body>
+</html>
